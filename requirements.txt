@@ -1,0 +1,16 @@
+# Core dependencies
+twilio
+pandas
+python-dotenv
+requests
+tqdm
+
+# Audio processing
+pydub
+speechrecognition
+
+# Transcription (AI Speech-to-Text)
+openai-whisper
+
+# Optional utilities (safe to include)
+ffmpeg-python
