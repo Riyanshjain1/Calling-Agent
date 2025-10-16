@@ -31,3 +31,77 @@ This project demonstrates the integration of **Python**, **Twilio Voice API**, a
 
 ## 🧱 Project Structure
 
+Calling-Agent/
+├── main.py # Handles automated calling logic
+├── transcribe.py # Converts recorded audio to text
+├── contacts.csv # Contact list with phone numbers
+├── .gitignore # Ignored files and folders
+├── requirements.txt # Dependencies list
+└── README.md # Documentation (this file)
+
+---
+
+## ⚙️ Setup & Installation
+
+###  Clone the Repository
+```bash
+git clone https://github.com/<your-username>/AI-Calling-Agent.git
+cd AI-Calling-Agent
+
+
+###  Clone the Repository
+```bash
+git clone https://github.com/<your-username>/AI-Calling-Agent.git
+cd AI-Calling-Agent
+
+
+###  Create a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+### Install Dependencies
+pip install -r requirements.txt
+
+
+### Create a .env File
+TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_AUTH_TOKEN=your_auth_token
+TWILIO_FROM_NUMBER=+1XXXXXXXXXX
+
+###🧾 Prepare Your CSV File
+
+NAME,PHONE
+User1,+919876543210
+User2,+14155552671
+
+### Run the Calling Agent
+python main.py
+
+### 🧩 Example Output
+✅ Loaded 2 contacts from contacts.csv
+📞 Calling Harshit at +919876543210
+🎧 Recording saved to recordings/Harshit.wav
+🧾 Transcript saved to transcripts/Harshit.txt
+
+
+### Transcript Sample
+Caller: Hello Harshit, this is an automated confirmation call.
+Harshit: Yes, I can hear you clearly.
+Caller: Thank you. Have a great day!
+
+
+### 🧩 Requirements
+pip install -r requirements.txt
+
+### 🧩 Example Output
+✅ Loaded 2 contacts from contacts.csv
+📞 Calling User1 at +9198769999
+🎧 Recording saved to recordings/User.wav
+🧾 Transcript saved to transcripts/Harshit.txt
+
+
+### Transcript Sample
+Caller: Hello User1, this is an automated confirmation call.
+User1: Yes, I can hear you clearly.
+Caller: Thank you. Have a great day!
